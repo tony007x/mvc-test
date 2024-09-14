@@ -1438,6 +1438,11 @@ wrap-ansi@^8.1.0:
     string-width "^5.0.1"
     strip-ansi "^7.0.1"
 
+wretch@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/wretch/-/wretch-2.10.0.tgz#07bf3c2ceb1e43330ae46955b455d2b1034e3e55"
+  integrity sha512-umAgGsgEfWVm2GT9Gl+Uyl2AI0q1P8WqXMGiDbSf5QImZW7bdnUbTUrgXYzYH+VmtlM6RqwJQH7JNizSNwt6kw==
+
 yaml@^2.3.4:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.5.1.tgz#c9772aacf62cb7494a95b0c4f1fb065b563db130"
