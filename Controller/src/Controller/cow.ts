@@ -7,9 +7,9 @@ const app = express();
 app.use(express.json());
 
 app.post('/get', async (req, res)=>{
-    let { id, type } = req.body;
+    let { id } = req.body;
 
-    if(!id || !type){
+    if(!id){
         return res.status(400).json({message: "Please complete the form!"})
     }
 
