@@ -13,7 +13,7 @@
 
 ใน `src/routes/views/home` คือ View ของ Frontend
 
-ใน `Controller` จะมีโฟลเดอร์ Controller , Model, routes
+ใน `Controller`[โฟลเดอร์นี้คือ Backend API] จะมีโฟลเดอร์ Controller , Model, routes
 
 `Controller/cow.ts` เป็น API ที่รับค่า ID มาจาก Frontend
 `Model/cowData.ts` เป็น Function ทำจะจัดการค่าต่อจจาก `cow.ts`
