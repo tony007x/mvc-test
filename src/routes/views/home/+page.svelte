@@ -43,7 +43,7 @@
 
 <div class="flex w-full h-screen">
     <div
-        class="flex w-full border border-[red] m-5 justify-center items-center"
+        class="flex w-full m-5 justify-center items-center"
     >
         <div
             class="flex flex-col gap-4 w-[300px] shadow-lg shadow-gray-600 p-10 rounded-lg"
