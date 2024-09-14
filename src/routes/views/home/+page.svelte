@@ -8,6 +8,7 @@
     let ID: string;
     let respone: string = "";
     let error: string = "";
+    let Breed: string = "";
 
     const wait = (ms: number): Promise<void> => {
         return new Promise((resolve) => setTimeout(resolve, ms));
@@ -37,14 +38,13 @@
             .json(async (e) => {
                 error = "";
                 respone = e.milkAmount;
+                Breed = e.cowID.Type;
             });
     };
 </script>
 
 <div class="flex w-full h-screen">
-    <div
-        class="flex w-full m-5 justify-center items-center"
-    >
+    <div class="flex w-full m-5 justify-center items-center">
         <div
             class="flex flex-col gap-4 w-[300px] shadow-lg shadow-gray-600 p-10 rounded-lg"
         >
@@ -55,6 +55,10 @@
                 <p class="text-center text-green-400">
                     <strong>milkAmount:</strong>
                     {respone}
+                </p>
+                <p class="text-center">
+                    <strong>Breed:</strong>
+                    {Breed}
                 </p>
             {/if}
             {#if error}

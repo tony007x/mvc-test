@@ -16,7 +16,7 @@ app.post('/get', async (req, res)=>{
     const cowID= findCowById(id)
     if(cowID){
         const milkAmount = calculateMilkProduction(cowID);
-        return res.status(200).json({milkAmount: milkAmount});
+        return res.status(200).json({milkAmount: milkAmount, cowID});
     }else{
         return res.status(404).json({message: "Cow not Found!"});
         
