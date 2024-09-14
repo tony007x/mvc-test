@@ -9,7 +9,7 @@
 5. `yarn` : เพื่อโหลด node_modules
 4. `yarn dev`: เพื่อรัน Backend (API)
 
-#อธิยาย
+#อธิบาย
 
 ใน `src/routes/views/home` คือ View ของ Frontend
 
