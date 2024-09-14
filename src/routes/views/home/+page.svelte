@@ -6,7 +6,6 @@
     import wretch from "wretch";
 
     let ID: string;
-    let Type: string;
     let respone: string = "";
     let error: string = "";
 
@@ -19,7 +18,6 @@
         await wretch("/api/cow/get")
             .post({
                 id: ID,
-                type: Type,
             })
             // response หากกรอกข้อมูลไม่ครบ
             .badRequest(async (e) => {
@@ -52,8 +50,6 @@
         >
             <Label class="font-extrabold">Cow ID</Label>
             <Input placeholder="your cow id" bind:value={ID}></Input>
-            <Label>Cow Type</Label>
-            <Input placeholder="your cow type" bind:value={Type}></Input>
             <Button on:click={add}>OK</Button>
             {#if respone}
                 <p class="text-center text-green-400">
